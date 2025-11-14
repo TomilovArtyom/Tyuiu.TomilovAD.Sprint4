@@ -17,8 +17,16 @@ namespace Tyuiu.TomilovAD.Sprint4.Task5.V17
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            String[] array = ["Квадрат", "Прямоугольник", "Круг", "Треугольник", "Пятиугольник", "Шестиугольник", "Восьмиугольник"];
-            Console.WriteLine(ds.Calculate(array));
+            int[,] numsarray = new int[5, 5];
+
+            for (int i = 1; i <= 5; i++)
+            {
+                for (int j = 1; j <= 5; j++)
+                {
+                    numsarray[i, j] = rnd.Next(-9,4);
+                }
+            }
+            Console.WriteLine(ds.Calculate(numsarray));
             Console.ReadKey();
         }
     }
