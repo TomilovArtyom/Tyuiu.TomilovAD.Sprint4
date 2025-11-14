@@ -20,6 +20,7 @@ namespace Tyuiu.TomilovAD.Sprint4.Task3.V16
             Console.WriteLine("***************************************************************************");
             int[,] a = new int[5, 5] { { 5, 8, 5, 8, 4 }, { 2, 3, 4, 6, 3 }, { 1, 1, 2, 9, 9 }, { 6, 7, 4, 1, 2 }, { 5, 7, 1, 8, 7 } };
             Console.WriteLine(ds.Calculate(a));
+            Console.ReadKey();
         }
     }
 }
